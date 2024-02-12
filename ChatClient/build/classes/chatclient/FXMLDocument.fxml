@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chatclient.FXMLDocumentController">
+   <top>
+      <MenuBar style="-fx-background-color: AliceBlue;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" style="-fx-background-color: AliceBlue;" text="File">
+            <items>
+              <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#menuClosed_Clicked" style="-fx-background-color: AliceBlue;" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </MenuBar>
+   </top>
+   <center>
+      <TextArea fx:id="chatTextArea" editable="false" prefHeight="302.0" prefWidth="586.0" wrapText="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Consolas" size="14.0" />
+         </font></TextArea>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="600.0" style="-fx-background-color: AliceBlue;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="msgTextField" prefHeight="26.0" prefWidth="474.0" />
+            <Button fx:id="sendBtn" mnemonicParsing="false" style="-fx-background-color: lightblue; -fx-border-style: solid; -fx-border-color: darkblue; -fx-border-radius: 3;" text="Send" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="15.0" right="15.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>
