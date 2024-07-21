@@ -1,4 +1,5 @@
 # The-Chattering
-A basic chat program between a client and a server.
 
-This was the final project for my Java Programming II class.
+This was the final project for my Java Programming II class. The assignment was to build a basic chat program between a client and a server.
+
+I used Scene Builder to create the UI portion of the program then coded everything else using NetBeans.
